@@ -27,9 +27,12 @@
                cursor: pointer;
                border-radius:30px;
             }
-            div{
-                background: pink;
+            .kurly{
                 padding: 10px;
+                background-color: #5f0080;
+            }
+            .kurly > h2{
+                color: #ffffff;
             }
             div>span:first-child{
                 background: red;
@@ -55,7 +58,7 @@
             }
             table > tbody > tr > td{
                 border: 1px solid gray;
-                background: pink;
+                background: rgb(100, 100, 100);
             }
             *{
                 border-collapse: collapse;
@@ -70,6 +73,20 @@
         </div>
       
         <form>
+            <div class="kurly">
+                <h2>마켓컬리에서 새벽배송을 만나보세요!</h2>
+               </div>
+               <a href="https://www.kurly.com/shop/main/index.php">
+                    <img src="img/img_kurly.jpg" alt="마켓컬리이미지">
+               </a>
+               <li><a href="https://www.naver.com">
+                        <div class="colorbtn">네이버 바로가기</div>
+                   </a>
+               </li><br>
+
+               <li><input type="button" value="바로가기" id=""></li><br>
+
+
             <ul>
                <li><input type="text">
                <a><input type="password">
@@ -83,39 +100,33 @@
                     <label><input type="checkbox" name="fruit" id="apple">사과</label>
                     <label><input type="checkbox" name="fruit" id="strawberry">딸기</label>           
                </li>
-               <li><input type="button" value="바로가기" id=""></li>
-               <li><a href="https://www.naver.com">
-                        <div class="colorbtn">네이버 바로가기</div>
-                   </a>
-               </li>
-               <a href="https://www.kurly.com/shop/main/index.php">
-                    <img src="img/img_kurly.jpg" alt="마켓컬리이미지">
-               </a>
+              
+               
             </ul>
         </form>
 
-        <div class="blocktag">
-            <div>block1</div>
-            <div>block2</div>
-            <div>block3</div>
-        </div>
-        <!--블록태그 div는 세로로 떨어지고-->
-        <!--div에 이름을 지어줄 땐 div 뒤에 class=""을 붙혀준다.-->
-        <div class="inlinetag">
-            <span>inline1</span>
-            <span>inline2</span>
-            <span>inline3</span>
-        </div>
-        <!--인라인태그인 span은 가로로 떨어짐-->
-        <!--html은 드래그 후에 ctrl+/는 코드가 주석처리됌 -->
-        <!--<!--이것은 주석-->
-        <!--css는 드래그 후에 ctrl+는 코드가 주석처리됌 -->
-        <!--!html은 /* 주석내용*/-->
-        <div>
-            <span>신상</span>
-            <span>웹사이트</span>
-            <span>갤러리</span>
-        </div>
+            <div class="blocktag">
+                <div>block1</div>
+                <div>block2</div>
+                <div>block3</div>
+            </div><br>
+            <!--블록태그 div는 세로로 떨어지고-->
+            <!--div에 이름을 지어줄 땐 div 뒤에 class=""을 붙혀준다.-->
+            <div class="inlinetag">
+                <span>inline1</span>
+                <span>inline2</span>
+                <span>inline3</span>
+            </div>
+            <!--인라인태그인 span은 가로로 떨어짐-->
+            <!--html은 드래그 후에 ctrl+/는 코드가 주석처리됌 -->
+            <!--<!--이것은 주석-->
+            <!--css는 드래그 후에 ctrl+는 코드가 주석처리됌 -->
+            <!--!html은 /* 주석내용*/-->
+            <div>
+                <span>신상</span>
+                <span>웹사이트</span>
+                <span>갤러리</span>
+            </div><br>
 
         <table>
             <thead>
@@ -147,23 +158,8 @@
                 </tr>
             </tbody>
         </table>
-        *{
-
-        }
-
-
-
-
+      
     </body>
-
-
-
-
-
-
-
-
-
 
 
 </html>
