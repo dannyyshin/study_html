@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="utf-8">
+        <title>shinsang-web</title>
+    </head>     
+    <body>
+        <style>
+            li {list-style: none;}
+            .blocktag{
+                background-color:#456324;
+            }
+            .blocktag > div{
+                background-color: #756657;
+                border: 1px solid #464562;
+            }
+            /*div로 버튼 만드는 방법*/
+            .colorbtn{
+               width:120px;
+               height:40px;
+               background-color:#456124;
+               color: #ffffff;
+               text-decoration: none;
+               text-align:center;
+               line-height:40px;
+               cursor: pointer;
+               border-radius:30px;
+            }
+            div{
+                background: pink;
+                padding: 10px;
+            }
+            div>span:first-child{
+                background: red;
+                padding: 20px;
+            }
+            div > span{
+               background: #945121;
+               padding: 10px;
+               margin: 40px;
+               color: #ffffff;
+               text-align:center;
+               line-height:40px;
+               cursor: pointer;
+            }
+            /*padding는 부피, margin은 간격*/
+
+            table{
+                border: 1px solid black;
+                border-collapse: collapse;
+            }
+            table > thead > tr > td{
+                border: 1px solid black;
+            }
+            table > tbody > tr > td{
+                border: 1px solid gray;
+                background: pink;
+            }
+            *{
+                border-collapse: collapse;
+                margin: 0px;
+                padding: 0px;
+                text-decoration: none;
+                color: #000000;
+            }
+        </style>
+        <div class="blankposition">
+            <div></div>
+        </div>
+      
+        <form>
+            <ul>
+               <li><input type="text">
+               <a><input type="password">
+               <li>
+                    <label><input type="radio" name="fruit" id="orange">오렌지</label>
+                    <label><input type="radio" name="fruit" id="apple">사과</label>
+                    <label><input type="radio" name="fruit" id="strawberry">딸기</label>           
+               </li>
+               <li>
+                    <label><input type="checkbox" name="fruit" id="orange">오렌지</label>
+                    <label><input type="checkbox" name="fruit" id="apple">사과</label>
+                    <label><input type="checkbox" name="fruit" id="strawberry">딸기</label>           
+               </li>
+               <li><input type="button" value="바로가기" id=""></li>
+               <li><div class="colorbtn">바로가기</div></li>
+               <a href="https://www.kurly.com/shop/main/index.php">
+                    <img src="img/img_kurly.jpg" alt="마켓컬리이미지">
+               </a>
+            </ul>
+        </form>
+
+        <div class="blocktag">
+            <div>block1</div>
+            <div>block2</div>
+            <div>block3</div>
+        </div>
+        <!--블록태그 div는 세로로 떨어지고-->
+        <!--div에 이름을 지어줄 땐 div 뒤에 class=""을 붙혀준다.-->
+        <div class="inlinetag">
+            <span>inline1</span>
+            <span>inline2</span>
+            <span>inline3</span>
+        </div>
+        <!--인라인태그인 span은 가로로 떨어짐-->
+        <!--html은 드래그 후에 ctrl+/는 코드가 주석처리됌 -->
+        <!--<!--이것은 주석-->
+        <!--css는 드래그 후에 ctrl+는 코드가 주석처리됌 -->
+        <!--!html은 /* 주석내용*/-->
+        <div>
+            <span>신상</span>
+            <span>웹사이트</span>
+            <span>갤러리</span>
+        </div>
+
+        <table>
+            <thead>
+                <tr>
+                    <td>이름</td>
+                    <td>성별</td>
+                    <td>나이</td>
+                    <td>키</td>
+                </tr>
+                <tr>
+                    <td>신상</td>
+                    <td>성별</td>
+                    <td>나이</td>
+                    <td>키</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>신상2</td>
+                    <td>성별</td>
+                    <td>나이</td>
+                    <td>키</td>
+                </tr>
+                <tr>
+                    <td>신상3</td>
+                    <td>성별</td>
+                    <td>나이</td>
+                    <td>키</td>
+                </tr>
+            </tbody>
+        </table>
+        *{
+
+        }
+
+
+
+
+    </body>
+
+
+
+
+
+
+
+
+
+
+
+</html>
